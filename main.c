@@ -1,6 +1,6 @@
 #include<stdio>
 
 int main(){
-	priintf("gellow World");
+	printf("gellow World");
 	return 0;
-}				
+}						
