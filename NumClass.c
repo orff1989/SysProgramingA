@@ -1,12 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main()
-{
-    int ans = isArmstrong(107);
-   printf("%i",ans);
-    return 0;
-}
+
 
 int isArmstrong(int num){
 int n =num;
@@ -34,12 +29,21 @@ if (sum==num) return 1;
 else return 0;
 }
 
-// int isPrime(int num){
-//     if (num<=1) return 0;
+int isPrime(int num){
+    if (num<=1) return 0;
+    
+double sq = sqrt(num);
 
-// for (int i = 2; i <= sqrt(num); i++)
-// {
-//     if (num%i==0) return 0;
-// }
-//     return 1;
-// }
+for (int i = 2; i <= sq; i++){
+    if (num%i==0) return 0;
+    }
+
+    return 1;
+}
+
+int main()
+{
+    int ans = isPrime(4);
+   printf("%i",ans);
+    return 0;
+}
