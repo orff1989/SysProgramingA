@@ -32,7 +32,6 @@ int main()
     pali[i]=0;
     }
     
-    int j1=0, j2=0,j3=0,j4=0;
     char space[2]=" "; 
     for (int i = num1; i <= num2; i++){
         char str[20];
