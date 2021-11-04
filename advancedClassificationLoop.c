@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<math.h>
+#include<NumClass.h>
 
 int isPalindrome(int num){
     int rem, copyNum=num, sum=0;

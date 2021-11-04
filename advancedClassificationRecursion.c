@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<math.h>
+#include<NumClass.h>
 
 static int sum = 0;
 int isPalindrome(int num){
