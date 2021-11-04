@@ -19,11 +19,11 @@ int main()
         num2=t;
     }
     
-    char primes[num2-num1+20];
-    char armstrongs[num2-num1+20];
-    char strongs[num2-num1+20];
-    char pali[num2-num1+20];
-    for (int i = 0; i < num2-num1+20; i++)
+    char primes[num2-num1+2];
+    char armstrongs[num2-num1+2];
+    char strongs[num2-num1+2];
+    char pali[num2-num1+2];
+    for (int i = 0; i < num2-num1+2; i++)
     {
     primes[i]=0;
     armstrongs[i]=0;
