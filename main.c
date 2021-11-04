@@ -23,27 +23,33 @@ int main()
     char armstrongs[num2-num1+20];
     char strongs[num2-num1+20];
     char pali[num2-num1+20];
+    for (int i = 0; i < num2-num1+20; i++)
+    {
+    primes[i]=0;
+    armstrongs[i]=0;
+    strongs[i]=0;
+    pali[i]=0;
+    }
     
     int j1=0, j2=0,j3=0,j4=0;
     char space[2]=" "; 
-    
     for (int i = num1; i <= num2; i++){
         char str[20];
         sprintf(str, "%d", i);
 
-    if (isPrime(i)==1){
+    if (isPrime(i)){
        strcat(primes, str);
         strcat(primes, space);
     }
-    if (isArmstrong(i)==1){
+    if (isArmstrong(i)){
         strcat(armstrongs, str);
         strcat(armstrongs, space);
     }
-    if (isStrong(i)==1){
+    if (isStrong(i)){
        strcat(strongs, str);
         strcat(strongs, space);
     }
-    if (isPalindrome(i)==1){
+    if (isPalindrome(i)){
         strcat(pali, str);
         strcat(pali, space);
     }
