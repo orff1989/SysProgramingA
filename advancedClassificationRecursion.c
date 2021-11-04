@@ -11,28 +11,33 @@ int isPalindrome(int num){
     else if(sum == num){
         return 1;
     }
-    
     return 0;
 }
 
-int numLength(int num){
-    if(num == 0){
+ int numLength(int num){
+    if(num < 10){
         return 1;
     }
         return 1 + numLength(num/10); 
 }
 
-int length = numLength(num);
-
-int isArmsrong(int num){
+int checkArmstrong(int num, int length){
     int sum;
-   int temp = num;
-   if(num != 0)
+    int temp = num;
+    
+    if(num != 0){
        temp = temp % 10;
        sum += (int) pow(temp, length);
-       isArmsrong(num / 10);
-   }
+       checkArmstrong(num / 10, length);
+   }   
 
-   if(sum == num) return 1;
-   else return 0;
+   if(sum == num){
+       return 1;
+   } 
+   return 0;
+}
+
+int isArmsrong(int num){
+    int length = numLength(num);
+    return checkArmstrong(num,length);
 }
