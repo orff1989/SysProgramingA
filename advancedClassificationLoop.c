@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-#include<NumClass.h>
+//#include "NumClass.h"
 
 int isPalindrome(int num){
     int rem, copyNum=num, sum=0;
@@ -18,8 +18,9 @@ int isPalindrome(int num){
 
 int numLength(int num){
     int counter = 0;
-    while(num > 0){
-        num = num /10;
+    int n=num;
+    while(n > 0){
+        n = n /10;
         counter++;
     }
     return counter;
@@ -27,11 +28,12 @@ int numLength(int num){
 
 int isArmstrong(int num){
     int length = numLength(num);
-    int sum;
+    int sum=0;
     int temp = num;
     while (temp > 0){
-       temp = temp % 10;
-       sum += (int) pow(temp, length);
+       int digit = temp % 10;
+       sum =sum + pow(digit, length);
+       temp = temp/10;
    }
 
    if(sum == num) {
