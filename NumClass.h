@@ -1,4 +1,3 @@
-
 int isPalindrome(int num);
 
 int isArmstrong(int num);

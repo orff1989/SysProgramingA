@@ -3,6 +3,7 @@
 #include"basicClassification.c"
 #include"advancedClassificationLoop.c"
 #include <math.h>
+#include "NumClass.h"
 
 int main()
 {
