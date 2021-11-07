@@ -54,7 +54,7 @@ int main()
         strcat(pali, str);
     }
     }
-    printf("The Armstrong numbers are:%s",armstrongs);
+    printf("The Armstrong numbers are:%s\n",armstrongs);
     printf("The Palindromes are:%s\n",pali);
     printf("The Prime numbers are:%s\n",primes);
     printf("The Strong numbers are:%s\n",strongs);
