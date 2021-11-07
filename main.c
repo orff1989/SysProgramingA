@@ -8,7 +8,6 @@
 int main()
 {
     int num1, num2;
- 
         scanf("%i", &num1);
         scanf("%i", &num2);
 
