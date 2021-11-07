@@ -58,6 +58,6 @@ int main()
     printf("The Palindromes are:%s\n",pali);
     printf("The Prime numbers are:%s\n",primes);
     printf("The Strong numbers are:%s\n",strongs);
-    printf("\n");
+    
     return 0;
 }
