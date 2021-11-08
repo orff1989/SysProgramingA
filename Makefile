@@ -18,7 +18,7 @@ loopd: $(OBJECT_LOOP)
 	$(CC) -shared -o libclassloops.so $(OBJECT_LOOP) -lm
 
 mains: $(OBJECTS_MAIN) libclassrec.a
-	$(CC) $(FLAGS) -o mains -lm $(OBJECTS_MAIN) -lm
+	$(CC) $(FLAGS) -o mains $(OBJECTS_MAIN) -lm
 
 maindloop: $(OBJECTS_MAIN)
 	$(CC) $(FLAGS) -o maindloop $(OBJECTS_MAIN) ./libclassloops.so -lm
