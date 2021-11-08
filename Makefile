@@ -6,10 +6,10 @@ OBJECTS_MAIN = main.c
 FLAGS = -Wall -g
 
 loops: $(OBJECT_LOOP)
-	$(AR) -rcs libclassloops.a $(OBJECT_LOOP) ./libclassloops.a
+	$(AR) -rcs libclassloops.a $(OBJECT_LOOP)
 
 recursives: $(OBJECT_REC)
-	$(AR) -rcs libclassrec.a $(OBJECT_REC) ./libclassrec.a 
+	$(AR) -rcs libclassrec.a $(OBJECT_REC)
 
 recursived: $(OBJECT_REC) 
 	$(CC) -shared -o libclassrec.so $(OBJECT_REC) -lm
