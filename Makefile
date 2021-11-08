@@ -29,4 +29,4 @@ maindrec: $(OBJECTS_MAIN)
 all: loops recursives recursived loopd mains maindloop maindrec
 
 clean:
-	rm -f *.o *.a *.so loops recursives
+	rm -f *.o *.a *.so recursives
