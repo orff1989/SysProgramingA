@@ -6,7 +6,7 @@ OBJECTS_MAIN = main.c
 FLAGS = -Wall -g
 
 loops: $(OBJECT_LOOP)
-	$(AR) -rcs  libclassloops.a $(OBJECT_LOOP)
+	$(AR) -rcs libclassloops.a $(OBJECT_LOOP)
 
 recursives: $(OBJECT_REC)
 	$(AR) -rcs libclassrec.a $(OBJECT_REC)
@@ -21,10 +21,10 @@ mains: $(OBJECTS_MAIN) libclassrec.a
 	$(CC) $(FLAGS) -o mains -lm $(OBJECTS_MAIN) -lm
 
 maindloop: $(OBJECTS_MAIN)
-	$(CC) $(FLAGS) -o maindloop $(OBJECTS_MAIN) ./maindloop.so -lm
+	$(CC) $(FLAGS) -o maindloop $(OBJECTS_MAIN) ./libclassloops.so -lm
 
 maindrec: $(OBJECTS_MAIN)
-	$(CC) $(FLAGS) -o maindrec $(OBJECTS_MAIN) ./libclamaindrecssrec.so -lm
+	$(CC) $(FLAGS) -o maindrec $(OBJECTS_MAIN) ./libclassrec.so -lm
 
 all: loops recursives recursived loopd mains maindloop maindrec
 
